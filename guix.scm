@@ -1,24 +1,18 @@
-;; SPDX-License-Identifier: MPL-2.0
-;; Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath) <j.d.a.jewell@open.ac.uk>
-;;
-;; Guix development environment for TradeUnionist.jl.
-;; Replaces the removed flake.nix per the estate Guix-only policy.
-;; Usage: guix shell -D -f guix.scm
+; SPDX-License-Identifier: MPL-2.0
+;; guix.scm — GNU Guix package definition for squisher-corpus
+;; Usage: guix shell -f guix.scm
 
 (use-modules (guix packages)
              (guix build-system gnu)
-             (gnu packages julia))
+             (guix licenses))
 
 (package
-  (name "tradeunionist-jl")
+  (name "squisher-corpus")
   (version "0.1.0")
   (source #f)
   (build-system gnu-build-system)
-  (native-inputs
-   (list julia))
-  (synopsis "TradeUnionist.jl")
-  (description
-   "TradeUnionist.jl — part of the hyperpolymath ecosystem.")
-  (home-page "https://github.com/hyperpolymath/TradeUnionist.jl")
-  (license ((@@ (guix licenses) license) "MPL-2.0"
+  (synopsis "squisher-corpus")
+  (description "squisher-corpus — part of the hyperpolymath ecosystem.")
+  (home-page "https://github.com/hyperpolymath/squisher-corpus")
+  (license ((@@ (guix licenses) license) "PMPL-1.0-or-later"
              "https://github.com/hyperpolymath/palimpsest-license")))
