@@ -7,11 +7,11 @@ using Dates
 export register_worksite, upsert_member, log_conversation
 
 function register_worksite(employer, location, unit, headcount)
-    return Worksite(gensym("site"), employer, location, unit, headcount)
+    return Worksite(gensym("site"), employer, location, unit, headcount, nothing)
 end
 
 function upsert_member(site_id, id, status, role)
-    return MemberRecord(id, site_id, status, role, String[], now())
+    return MemberRecord(id, site_id, status, role, String[], now(), nothing)
 end
 
 function log_conversation(member_id, tags, sentiment, next_step)
