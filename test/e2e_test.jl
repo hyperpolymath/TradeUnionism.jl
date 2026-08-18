@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: MPL-2.0
 # (MPL-2.0 preferred; MPL-2.0 required for Julia ecosystem)
-# E2E pipeline tests for TradeUnionist.jl
+# E2E pipeline tests for TradeUnionism.jl
 
 using Test
-using TradeUnionist
+using TradeUnionism
 using Dates
 using DataFrames
 

@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: MPL-2.0
 # (MPL-2.0 preferred; MPL-2.0 required for Julia ecosystem)
-# Property-based invariant tests for TradeUnionist.jl
+# Property-based invariant tests for TradeUnionism.jl
 
 using Test
-using TradeUnionist
+using TradeUnionism
 
 @testset "Property-Based Tests" begin
 

@@ -4,7 +4,7 @@ Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 -->
 # Maintainers
 
-This document lists the current and former maintainers of **TradeUnionist.Jl**.
+This document lists the current and former maintainers of **TradeUnionism.Jl**.
 
 ---
 

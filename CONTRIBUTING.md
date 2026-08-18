@@ -3,15 +3,15 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 -->
 # Clone the repository
-git clone https://github.com/hyperpolymath/TradeUnionist.jl.git
-cd TradeUnionist.jl
+git clone https://github.com/hyperpolymath/TradeUnionism.jl.git
+cd TradeUnionism.jl
 
 # Using Nix (recommended for reproducibility)
 nix develop
 
 # Or using toolbox/distrobox
-toolbox create TradeUnionist.jl-dev
-toolbox enter TradeUnionist.jl-dev
+toolbox create TradeUnionism.jl-dev
+toolbox enter TradeUnionism.jl-dev
 # Install dependencies manually
 
 # Verify setup
@@ -21,7 +21,7 @@ just test    # Run test suite
 
 ### Repository Structure
 ```
-TradeUnionist.jl/
+TradeUnionism.jl/
 ├── src/                 # Source code (Perimeter 1-2)
 ├── lib/                 # Library code (Perimeter 1-2)
 ├── extensions/          # Extensions (Perimeter 2)
@@ -95,10 +95,10 @@ Use the [feature request template](.github/ISSUE_TEMPLATE/feature_request.md) an
 
 Look for issues labelled:
 
-- [`good first issue`](https://github.com/hyperpolymath/TradeUnionist.jl/labels/good%20first%20issue) — Simple Perimeter 3 tasks
-- [`help wanted`](https://github.com/hyperpolymath/TradeUnionist.jl/labels/help%20wanted) — Community help needed
-- [`documentation`](https://github.com/hyperpolymath/TradeUnionist.jl/labels/documentation) — Docs improvements
-- [`perimeter-3`](https://github.com/hyperpolymath/TradeUnionist.jl/labels/perimeter-3) — Community sandbox scope
+- [`good first issue`](https://github.com/hyperpolymath/TradeUnionism.jl/labels/good%20first%20issue) — Simple Perimeter 3 tasks
+- [`help wanted`](https://github.com/hyperpolymath/TradeUnionism.jl/labels/help%20wanted) — Community help needed
+- [`documentation`](https://github.com/hyperpolymath/TradeUnionism.jl/labels/documentation) — Docs improvements
+- [`perimeter-3`](https://github.com/hyperpolymath/TradeUnionism.jl/labels/perimeter-3) — Community sandbox scope
 
 ---
 

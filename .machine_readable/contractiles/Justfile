@@ -18,7 +18,7 @@ set positional-arguments := true
 import? "contractile.just"
 
 # Project metadata — customize these
-project := "TradeUnionist.jl"
+project := "TradeUnionism.jl"
 version := "0.1.0"
 tier := "infrastructure"  # 1 | 2 | infrastructure
 

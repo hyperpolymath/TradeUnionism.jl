@@ -24,8 +24,8 @@ just init       # interactive placeholder replacement
 ## Clone and Setup (Existing Project)
 
 ```bash
-git clone https://github.com/hyperpolymath/TradeUnionist.jl.git
-cd TradeUnionist.jl
+git clone https://github.com/hyperpolymath/TradeUnionism.jl.git
+cd TradeUnionism.jl
 just deps
 ```
 
@@ -63,5 +63,5 @@ docs/        # Documentation
 If `just deps` fails, ensure your toolchain version matches the
 project requirements listed in the `Justfile` or `.machine_readable/ECOSYSTEM.a2ml`.
 
-Open a [Discussion](https://github.com/hyperpolymath/TradeUnionist.jl/discussions)
+Open a [Discussion](https://github.com/hyperpolymath/TradeUnionism.jl/discussions)
 if you get stuck.

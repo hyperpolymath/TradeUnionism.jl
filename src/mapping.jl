@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MPL-2.0
 # Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath) <j.d.a.jewell@open.ac.uk>
 #
-# Geospatial mapping module for TradeUnionist.jl.
+# Geospatial mapping module for TradeUnionism.jl.
 # Provides spatial analysis for union organising: finding members near worksites,
 # computing commute distances, and performing spatial joins with external data.
 

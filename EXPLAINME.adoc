@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: CC-BY-SA-4.0
 // Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
-= TradeUnionist.jl — Show Me The Receipts
+= TradeUnionism.jl — Show Me The Receipts
 :toc:
 :icons: font
 
@@ -56,9 +56,9 @@ ____
 
 == Dogfooded Across The Account
 
-TradeUnionist.jl is the **labor analytics tier** for ecosystem operations:
-- **PRComms.jl**: Uses TradeUnionist data for member alerts and union press releases (via `comms_bridge.jl` export at line 60)
-- **PostDisciplinary.jl**: TradeUnionist labor economics data feeds into cross-disciplinary research (union density as `LinkedEntity`)
+TradeUnionism.jl is the **labor analytics tier** for ecosystem operations:
+- **PRComms.jl**: Uses TradeUnionism data for member alerts and union press releases (via `comms_bridge.jl` export at line 60)
+- **PostDisciplinary.jl**: TradeUnionism labor economics data feeds into cross-disciplinary research (union density as `LinkedEntity`)
 - **Cliodynamics.jl** (planned): Historical union membership trends and collective bargaining outcomes
 
 Same domain-modeling pattern used in `idaptik` (game economics), `opsm` (package management), `prcomms` (stakeholder communication).
@@ -69,7 +69,7 @@ Same domain-modeling pattern used in `idaptik` (game economics), `opsm` (package
 |===
 | Path | What's There
 
-| `src/TradeUnionist.jl` | Module entry point (62 lines); includes 8 submodules; exports 11 core types and 8 operations for worksite, member, grievance, bargaining, spatial, metrics, events, comms
+| `src/TradeUnionism.jl` | Module entry point (62 lines); includes 8 submodules; exports 11 core types and 8 operations for worksite, member, grievance, bargaining, spatial, metrics, events, comms
 | `src/types.jl` | 1.6KB data structures: `Worksite` (employer, headcount, location, departments, shifts), `MemberRecord` (id, name, worksite_id, department, shift, engagement_level, status), `OrganizerConversation` (timestamp, member_id, message_text, sentiment_score), `GrievanceCase` (id, member_id, description, status, opened_at, updated_at), `ContractClause` (id, text, wage_impact, benefits), `BargainingProposal` (clauses, total_cost, strategic_priority), plus event and union strategy types
 | `src/organizing.jl` | Member enrollment and organizer conversation logging; `upsert_member(site, record)` adds/updates member; `log_conversation(member_id, msg, sentiment)` records engagement
 | `src/grievances.jl` | Grievance case management: `open_grievance(member_id, description)` creates case; `update_grievance_status(case, status)` transitions state; evidence storage in case metadata
@@ -89,7 +89,7 @@ Same domain-modeling pattern used in `idaptik` (game economics), `opsm` (package
 3. **Metric consistency**: `calc_density`, `calc_coverage`, `calc_leadership_ratio` must all reference the same member set (transactions must not interleave)
 4. **Spatial query correctness**: `find_members_near(lat, lon, r)` must be symmetric—if member A is near member B, then B is near A
 5. **Costing accuracy**: `cost_proposal` must correctly aggregate all clause costs; no rounding errors >$0.01
-6. **PR integration atomicity**: A member alert sent via PRComms must log to TradeUnionist audit trail atomically
+6. **PR integration atomicity**: A member alert sent via PRComms must log to TradeUnionism audit trail atomically
 
 == Questions?
 

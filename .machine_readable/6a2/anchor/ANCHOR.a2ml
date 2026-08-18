@@ -1,7 +1,7 @@
-# ⚓ ANCHOR: TradeUnionist.jl
-# This is the canonical authority for the TradeUnionist.jl repository.
+# ⚓ ANCHOR: TradeUnionism.jl
+# This is the canonical authority for the TradeUnionism.jl repository.
 
-id: "org.hyperpolymath.TradeUnionist.jl"
+id: "org.hyperpolymath.TradeUnionism.jl"
 version: "1.0.0"
 clade: "unknown"
 status: "active"
