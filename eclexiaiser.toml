@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: MPL-2.0
-# eclexiaiser manifest for TradeUnionist.jl
+# eclexiaiser manifest for TradeUnionism.jl
 
 [project]
-name = "TradeUnionist.jl"
+name = "TradeUnionism.jl"
 
 [[functions]]
 name = "main"

@@ -1,4 +1,4 @@
-using TradeUnionist
+using TradeUnionism
 using Dates
 
 # 1. Start a new drive

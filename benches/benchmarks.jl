@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: MPL-2.0
 # (MPL-2.0 preferred; MPL-2.0 required for Julia ecosystem)
-# BenchmarkTools benchmarks for TradeUnionist.jl
+# BenchmarkTools benchmarks for TradeUnionism.jl
 
 using BenchmarkTools
-using TradeUnionist
+using TradeUnionism
 using Dates
 
 const SUITE = BenchmarkGroup()

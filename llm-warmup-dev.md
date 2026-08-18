@@ -2,9 +2,9 @@
 SPDX-License-Identifier: CC-BY-SA-4.0
 Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 -->
-# LLM Warmup — TradeUnionist.jl (Developer)
+# LLM Warmup — TradeUnionism.jl (Developer)
 
-## What is TradeUnionist.jl?
+## What is TradeUnionism.jl?
 See README.adoc for overview.
 
 ## Key Commands

@@ -52,7 +52,7 @@ pub const Handle = opaque {
 
 /// Initialize the library
 /// Returns a handle, or null on failure
-export fn TradeUnionist.jl_init() ?*Handle {
+export fn TradeUnionism.jl_init() ?*Handle {
     const allocator = std.heap.c_allocator;
 
     const handle = allocator.create(Handle) catch {
@@ -71,7 +71,7 @@ export fn TradeUnionist.jl_init() ?*Handle {
 }
 
 /// Free the library handle
-export fn TradeUnionist.jl_free(handle: ?*Handle) void {
+export fn TradeUnionism.jl_free(handle: ?*Handle) void {
     const h = handle orelse return;
     const allocator = h.allocator;
 
@@ -87,7 +87,7 @@ export fn TradeUnionist.jl_free(handle: ?*Handle) void {
 //==============================================================================
 
 /// Process data (example operation)
-export fn TradeUnionist.jl_process(handle: ?*Handle, input: u32) Result {
+export fn TradeUnionism.jl_process(handle: ?*Handle, input: u32) Result {
     const h = handle orelse {
         setError("Null handle");
         return .null_pointer;
@@ -111,7 +111,7 @@ export fn TradeUnionist.jl_process(handle: ?*Handle, input: u32) Result {
 
 /// Get a string result (example)
 /// Caller must free the returned string
-export fn TradeUnionist.jl_get_string(handle: ?*Handle) ?[*:0]const u8 {
+export fn TradeUnionism.jl_get_string(handle: ?*Handle) ?[*:0]const u8 {
     const h = handle orelse {
         setError("Null handle");
         return null;
@@ -133,7 +133,7 @@ export fn TradeUnionist.jl_get_string(handle: ?*Handle) ?[*:0]const u8 {
 }
 
 /// Free a string allocated by the library
-export fn TradeUnionist.jl_free_string(str: ?[*:0]const u8) void {
+export fn TradeUnionism.jl_free_string(str: ?[*:0]const u8) void {
     const s = str orelse return;
     const allocator = std.heap.c_allocator;
 
@@ -146,7 +146,7 @@ export fn TradeUnionist.jl_free_string(str: ?[*:0]const u8) void {
 //==============================================================================
 
 /// Process an array of data
-export fn TradeUnionist.jl_process_array(
+export fn TradeUnionism.jl_process_array(
     handle: ?*Handle,
     buffer: ?[*]const u8,
     len: u32,
@@ -182,7 +182,7 @@ export fn TradeUnionist.jl_process_array(
 
 /// Get the last error message
 /// Returns null if no error
-export fn TradeUnionist.jl_last_error() ?[*:0]const u8 {
+export fn TradeUnionism.jl_last_error() ?[*:0]const u8 {
     const err = last_error orelse return null;
 
     // Return C string (static storage, no need to free)
@@ -196,12 +196,12 @@ export fn TradeUnionist.jl_last_error() ?[*:0]const u8 {
 //==============================================================================
 
 /// Get the library version
-export fn TradeUnionist.jl_version() [*:0]const u8 {
+export fn TradeUnionism.jl_version() [*:0]const u8 {
     return VERSION.ptr;
 }
 
 /// Get build information
-export fn TradeUnionist.jl_build_info() [*:0]const u8 {
+export fn TradeUnionism.jl_build_info() [*:0]const u8 {
     return BUILD_INFO.ptr;
 }
 
@@ -213,7 +213,7 @@ export fn TradeUnionist.jl_build_info() [*:0]const u8 {
 pub const Callback = *const fn (u64, u32) callconv(.C) u32;
 
 /// Register a callback
-export fn TradeUnionist.jl_register_callback(
+export fn TradeUnionism.jl_register_callback(
     handle: ?*Handle,
     callback: ?Callback,
 ) Result {
@@ -244,7 +244,7 @@ export fn TradeUnionist.jl_register_callback(
 //==============================================================================
 
 /// Check if handle is initialized
-export fn TradeUnionist.jl_is_initialized(handle: ?*Handle) u32 {
+export fn TradeUnionism.jl_is_initialized(handle: ?*Handle) u32 {
     const h = handle orelse return 0;
     return if (h.initialized) 1 else 0;
 }
@@ -254,22 +254,22 @@ export fn TradeUnionist.jl_is_initialized(handle: ?*Handle) u32 {
 //==============================================================================
 
 test "lifecycle" {
-    const handle = TradeUnionist.jl_init() orelse return error.InitFailed;
-    defer TradeUnionist.jl_free(handle);
+    const handle = TradeUnionism.jl_init() orelse return error.InitFailed;
+    defer TradeUnionism.jl_free(handle);
 
-    try std.testing.expect(TradeUnionist.jl_is_initialized(handle) == 1);
+    try std.testing.expect(TradeUnionism.jl_is_initialized(handle) == 1);
 }
 
 test "error handling" {
-    const result = TradeUnionist.jl_process(null, 0);
+    const result = TradeUnionism.jl_process(null, 0);
     try std.testing.expectEqual(Result.null_pointer, result);
 
-    const err = TradeUnionist.jl_last_error();
+    const err = TradeUnionism.jl_last_error();
     try std.testing.expect(err != null);
 }
 
 test "version" {
-    const ver = TradeUnionist.jl_version();
+    const ver = TradeUnionism.jl_version();
     const ver_str = std.mem.span(ver);
     try std.testing.expectEqualStrings(VERSION, ver_str);
 }

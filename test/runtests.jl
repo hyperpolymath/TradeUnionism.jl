@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: MPL-2.0
 using Test
-using TradeUnionist
+using TradeUnionism
 using Dates
 using DataFrames
 
-@testset "TradeUnionist.jl" begin
+@testset "TradeUnionism.jl" begin
 
     # ─────────────────────────────────
     # Types
@@ -261,9 +261,9 @@ using DataFrames
     @testset "Planning" begin
 
         @testset "PlanningLevel subtypes" begin
-            @test StrategicGoal() isa TradeUnionist.Planning.PlanningLevel
-            @test TacticalObjective() isa TradeUnionist.Planning.PlanningLevel
-            @test OperationalTask() isa TradeUnionist.Planning.PlanningLevel
+            @test StrategicGoal() isa TradeUnionism.Planning.PlanningLevel
+            @test TacticalObjective() isa TradeUnionism.Planning.PlanningLevel
+            @test OperationalTask() isa TradeUnionism.Planning.PlanningLevel
         end
 
         @testset "UnionActivity construction" begin
@@ -274,7 +274,7 @@ using DataFrames
                 "Jane Doe",
                 :in_progress,
             )
-            @test act.level isa TradeUnionist.Planning.PlanningLevel
+            @test act.level isa TradeUnionism.Planning.PlanningLevel
             @test act.function_area == :Organizing
             @test act.description == "Achieve 50% density by Q4"
             @test act.owner == "Jane Doe"
@@ -297,10 +297,10 @@ using DataFrames
     @testset "Events" begin
 
         @testset "EventType subtypes" begin
-            @test StrikeVote() isa TradeUnionist.Events.EventType
-            @test Rally() isa TradeUnionist.Events.EventType
-            @test TownHall() isa TradeUnionist.Events.EventType
-            @test CommitteeMeeting() isa TradeUnionist.Events.EventType
+            @test StrikeVote() isa TradeUnionism.Events.EventType
+            @test Rally() isa TradeUnionism.Events.EventType
+            @test TownHall() isa TradeUnionism.Events.EventType
+            @test CommitteeMeeting() isa TradeUnionism.Events.EventType
         end
 
         @testset "UnionEvent construction" begin

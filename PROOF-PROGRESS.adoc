@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: CC-BY-SA-4.0
 // SPDX-FileCopyrightText: 2026 Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 //
-// Proof Progress Snapshot — TradeUnionist.jl
+// Proof Progress Snapshot — TradeUnionism.jl
 // Generated: 2026-08-14
 
-= TradeUnionist.jl — Proof/Verification Guarantee Progress Snapshot
+= TradeUnionism.jl — Proof/Verification Guarantee Progress Snapshot
 :toc:
 :icons: font
 
 This document provides an indicative state of progress on formal guarantees for
-the TradeUnionist.jl Julia package as of 2026-08-14.
+the TradeUnionism.jl Julia package as of 2026-08-14.
 
 == Status: PLACEHOLDER
 

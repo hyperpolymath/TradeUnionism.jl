@@ -4,13 +4,13 @@ Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 -->
 # Project Governance
 
-This document describes the governance model for **TradeUnionist.Jl**.
+This document describes the governance model for **TradeUnionism.Jl**.
 
 ---
 
 ## Project Governance Model
 
-TradeUnionist.Jl follows a **Benevolent Dictator For Life (BDFL)** governance model.
+TradeUnionism.Jl follows a **Benevolent Dictator For Life (BDFL)** governance model.
 This model is well-suited for solo maintainers and small project teams where rapid,
 consistent decision-making is more valuable than formal consensus processes.
 

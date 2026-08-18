@@ -4,7 +4,7 @@ Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 -->
 # Template Placeholders
 
-All placeholders in this template follow the `TradeUnionist.jl` pattern.
+All placeholders in this template follow the `TradeUnionism.jl` pattern.
 After cloning, replace them with your project-specific values.
 
 ## Recommended: Interactive Bootstrap
@@ -24,10 +24,10 @@ validates the result, and runs k9-svc checks if available.
 sed -i 's/Jonathan D.A. Jewell/Jane Doe/g' $(grep -rl 'Jonathan D.A. Jewell' .)
 sed -i 's/j.d.a.jewell@open.ac.uk/jane@example.org/g' $(grep -rl 'j.d.a.jewell@open.ac.uk' .)
 sed -i 's/hyperpolymath/my-org/g' $(grep -rl 'hyperpolymath' .)
-sed -i 's/TradeUnionist.Jl/my-project/g' $(grep -rl 'TradeUnionist.Jl' .)
-sed -i 's/TradeUnionist.jl/MY_PROJECT/g' $(grep -rl 'TradeUnionist.jl' .)
+sed -i 's/TradeUnionism.Jl/my-project/g' $(grep -rl 'TradeUnionism.Jl' .)
+sed -i 's/TradeUnionism.jl/MY_PROJECT/g' $(grep -rl 'TradeUnionism.jl' .)
 sed -i 's/{{project}}/my_project/g' $(grep -rl '{{project}}' .)
-sed -i 's/TradeUnionist.jl/my-project/g' $(grep -rl 'TradeUnionist.jl' .)
+sed -i 's/TradeUnionism.jl/my-project/g' $(grep -rl 'TradeUnionism.jl' .)
 sed -i 's/github.com/github.com/g' $(grep -rl 'github.com' .)
 sed -i "s/2026/$(date +%Y)/g" $(grep -rl '2026' .)
 sed -i "s/2026-03-16/$(date +%Y-%m-%d)/g" $(grep -rl '2026-03-16' .)
@@ -51,11 +51,11 @@ sed -i "s/2026-03-16/$(date +%Y-%m-%d)/g" $(grep -rl '2026-03-16' .)
 
 | Placeholder | Description | Example | Files |
 |---|---|---|---|
-| `TradeUnionist.Jl` | Human-readable project name | `My Project` | SECURITY.md, CODE_OF_CONDUCT.md, TOPOLOGY.md, STATE.a2ml, Justfile, GOVERNANCE.md, MAINTAINERS.md, flake.nix, devcontainer.json |
-| `TradeUnionist.jl` | One-line description | `A tool for X` | flake.nix |
-| `TradeUnionist.jl` | Uppercase identifier (for Idris2 modules, C macros) | `MY_PROJECT` | ABI-FFI-README.md, src/abi/*.idr, ffi/zig/*.zig |
+| `TradeUnionism.Jl` | Human-readable project name | `My Project` | SECURITY.md, CODE_OF_CONDUCT.md, TOPOLOGY.md, STATE.a2ml, Justfile, GOVERNANCE.md, MAINTAINERS.md, flake.nix, devcontainer.json |
+| `TradeUnionism.jl` | One-line description | `A tool for X` | flake.nix |
+| `TradeUnionism.jl` | Uppercase identifier (for Idris2 modules, C macros) | `MY_PROJECT` | ABI-FFI-README.md, src/abi/*.idr, ffi/zig/*.zig |
 | `{{project}}` | Lowercase identifier (for C symbols, filenames) | `my_project` | ABI-FFI-README.md, ffi/zig/*.zig |
-| `TradeUnionist.jl` | Repository name (slug) | `my-project` | CONTRIBUTING.md, SECURITY.md, CODE_OF_CONDUCT.md, cliff.toml |
+| `TradeUnionism.jl` | Repository name (slug) | `my-project` | CONTRIBUTING.md, SECURITY.md, CODE_OF_CONDUCT.md, cliff.toml |
 | `hyperpolymath` | GitHub/GitLab org or username | `my-org` | SPDX headers, CONTRIBUTING.md, SECURITY.md, GOVERNANCE.md, MAINTAINERS.md, CODEOWNERS, mirror.yml, cliff.toml |
 | `github.com` | Git forge domain | `github.com` | CONTRIBUTING.md |
 
@@ -90,7 +90,7 @@ sed -i "s/2026-03-16/$(date +%Y-%m-%d)/g" $(grep -rl '2026-03-16' .)
 | Placeholder | Description | Example | Files |
 |---|---|---|---|
 | `MPL-2.0` | License name | `MPL-2.0` | ABI-FFI-README.md |
-| `TradeUnionist.jl` | One-line project description | `FFI bridges between languages` | STATE.a2ml |
+| `TradeUnionism.jl` | One-line project description | `FFI bridges between languages` | STATE.a2ml |
 
 ### AI Manifest
 

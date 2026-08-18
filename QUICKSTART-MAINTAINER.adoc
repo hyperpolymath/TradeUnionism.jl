@@ -33,7 +33,7 @@ Key workflows:
 
 [source,bash]
 ----
-podman build -f Containerfile -t TradeUnionist.jl:latest .
+podman build -f Containerfile -t TradeUnionism.jl:latest .
 ----
 
 == Mirrors

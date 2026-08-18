@@ -4,7 +4,7 @@ Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 -->
 {{~ Aditionally delete this line and fill out the template below ~}}
 
-# TradeUnionist.jl ABI/FFI Documentation
+# TradeUnionism.jl ABI/FFI Documentation
 
 ## Overview
 
@@ -251,7 +251,7 @@ gcc -o example example.c -l{{project}} -L./zig-out/lib
 ### From Idris2
 
 ```idris
-import TradeUnionist.jl.ABI.Foreign
+import TradeUnionism.jl.ABI.Foreign
 
 main : IO ()
 main = do

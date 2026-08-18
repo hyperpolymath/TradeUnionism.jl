@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: CC-BY-SA-4.0
 // Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
-= TradeUnionist.jl - Citation Guide
+= TradeUnionism.jl - Citation Guide
 :toc:
 
 == BibTeX
 
 [source,bibtex]
 ----
-@software{TradeUnionist.jl_2026,
+@software{TradeUnionism.jl_2026,
   author = {Jewell, Jonathan D.A.},
-  title = {TradeUnionist.jl},
+  title = {TradeUnionism.jl},
   year = {2026},
-  url = {https://github.com/hyperpolymath/TradeUnionist.jl},
+  url = {https://github.com/hyperpolymath/TradeUnionism.jl},
   license = {MPL-2.0}
 }
 ----
 
 == Harvard Style
 
-Jewell, J.D.A. (2026) _TradeUnionist.jl_ [Computer software]. Available at: https://github.com/hyperpolymath/TradeUnionist.jl
+Jewell, J.D.A. (2026) _TradeUnionism.jl_ [Computer software]. Available at: https://github.com/hyperpolymath/TradeUnionism.jl
 
 == OSCOLA
 
-Jonathan D.A. Jewell, 'TradeUnionist.jl' (2026) <https://github.com/hyperpolymath/TradeUnionist.jl>
+Jonathan D.A. Jewell, 'TradeUnionism.jl' (2026) <https://github.com/hyperpolymath/TradeUnionism.jl>
 
 == MLA
 
-Jewell, Jonathan D.A. "TradeUnionist.jl." 2026, github.com/hyperpolymath/TradeUnionist.jl.
+Jewell, Jonathan D.A. "TradeUnionism.jl." 2026, github.com/hyperpolymath/TradeUnionism.jl.
 
 == APA 7
 
-Jewell, J.D.A. (2026). _TradeUnionist.jl_ [Computer software]. GitHub. https://github.com/hyperpolymath/TradeUnionist.jl
+Jewell, J.D.A. (2026). _TradeUnionism.jl_ [Computer software]. GitHub. https://github.com/hyperpolymath/TradeUnionism.jl
 
 == See Also
 

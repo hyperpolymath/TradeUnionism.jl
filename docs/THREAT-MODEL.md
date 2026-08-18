@@ -4,13 +4,13 @@ Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 -->
 <!-- Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath) <j.d.a.jewell@open.ac.uk> -->
 
-# Threat Model: TradeUnionist.Jl
+# Threat Model: TradeUnionism.Jl
 
 ## Document Info
 
 | Field         | Value                          |
 |---------------|--------------------------------|
-| Project       | TradeUnionist.Jl               |
+| Project       | TradeUnionism.Jl               |
 | Version       | 1.0                            |
 | Last Reviewed | 2026-03-16                       |
 | Author        | Jonathan D.A. Jewell                     |
@@ -36,7 +36,7 @@ Copyright (c) Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 
 ## System Overview
 
-Brief description of TradeUnionist.Jl and its architecture.
+Brief description of TradeUnionism.Jl and its architecture.
 
 > See [TOPOLOGY.md](../TOPOLOGY.md) for the full architecture diagram and completion dashboard.
 

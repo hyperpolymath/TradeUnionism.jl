@@ -6,8 +6,8 @@
 uuid = "f28895eb-673c-5376-930c-8aab9f69b6a6"
 primary-forge = "github"
 primary-owner = "hyperpolymath"
-canonical-name = "TradeUnionist.jl"
-prefixed-name = "dx-TradeUnionist.jl"
+canonical-name = "TradeUnionism.jl"
+prefixed-name = "dx-TradeUnionism.jl"
 
 [clade]
 primary = "dx"
@@ -16,9 +16,9 @@ assigned = "2026-03-16"
 rationale = ""
 
 [forges]
-github = "hyperpolymath/TradeUnionist.jl"
-gitlab = "hyperpolymath/TradeUnionist.jl"
-bitbucket = "hyperpolymath/TradeUnionist.jl"
+github = "hyperpolymath/TradeUnionism.jl"
+gitlab = "hyperpolymath/TradeUnionism.jl"
+bitbucket = "hyperpolymath/TradeUnionism.jl"
 
 [lineage]
 type = "standalone"
