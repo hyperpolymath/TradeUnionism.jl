@@ -84,7 +84,7 @@ jobs:
 
       - name: Validate K9 contracts
         if: steps.detect.outputs.k9_count > 0
-        uses: hyperpolymath/k9-ecosystem/validate-action@347ee5d6a1b77831de56fe8da21a473724e4cac2 # k9-ecosystem main
+        uses: hyperpolymath/k9-ecosystem/validate-action@61266a8dbe1bb3600c12003a69bff5e62c6e40a1 # k9-ecosystem main
       - name: Write summary
         run: |
           K9_COUNT="${{ steps.detect.outputs.k9_count }}"
